@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(224, 86, 253,1.0);
+    line-height: 100px;
+}
+
+.title{
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+.container{
+    margin:30px;
+}
+
+.book-sky{
+    display: inline-block;
+    padding:20px;
+    background-color: black;
+    color: white;
+    vertical-align: top;
+    border-radius: 20px;
+    width: 30%;
+}
+.book-sky h2{
+    text-align: center;
+    padding: 20px;
+    color:rgba(224, 86, 253,1.0);
+    text-transform: uppercase;
+}
+
+.book-sky h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+
+.book-sky button{
+    margin-top:30px ;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+.poppupButton{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    background-color:rgba(224, 86, 253,1.0) ;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index:1;
+    transition: 1s;
+    display: none;
+}
+
+.form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  background-color:rgba(224, 86, 253,1.0) ;
+  width:500px;
+  padding: 30px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  transition: 1.5s;
+  display: none;
+ 
+  
+}
+
+.form input{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid rgba(190, 46, 221,1.0);
+}
+
+.form input::placeholder{
+    color: black;
+    font-weight: 500;
+
+}
+
+.form textarea{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 3px solid rgba(190, 46, 221,1.0); 
+}
+
+.form textarea::placeholder{
+    color: black;
+    font-weight: 500;
+}
+
+.form button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color:rgba(190, 46, 221,1.0) ;
+}
+
+
+
+@media all and (max-width:500px) {
+  
+
+    nav{
+        width: 100vw;
+        height: 100px;
+        background-color: rgba(224, 86, 253,1.0);
+        line-height: 100px;
+    }
+    
+    .title{
+        margin-left:20px;
+        font-size:30px;
+        color: white;
+    }
+    .container{
+        margin:20px;
+    }
+    
+    .book-sky{
+        display: inline-block;
+        padding:20px;
+        background-color: black;
+        color: white;
+        vertical-align: top;
+        border-radius: 20px;
+        width:50%;
+    }
+    .book-sky h2{
+        text-align: center;
+        padding: 20px;
+        color:rgba(224, 86, 253,1.0);
+        text-transform: uppercase;
+    }
+    
+    .book-sky h3{
+        font-size: 20px;
+        padding-bottom: 20px;
+    
+    }
+    
+    .book-sky button{
+        margin-top:20px ;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        
+    }
+    
+    .poppupButton{
+        width: 50px;
+        height: 50px;
+        padding: 20px;
+        background-color:rgba(224, 86, 253,1.0) ;
+        color: white;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-weight: bold;
+        cursor: pointer;
+        position: fixed;
+        right:20px;
+        bottom:20px;
+    }
+    
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        z-index:1;
+        transition: 1s;
+        display: none;
+    }
+    
+    .form{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 2;
+      background-color:rgba(224, 86, 253,1.0) ;
+      width:300px;
+      padding:20px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      transition: 1.5s;
+      display: none;
+     
+      
+    }
+    
+    .form input{
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 3px solid rgba(190, 46, 221,1.0);
+    }
+    
+    .form input::placeholder{
+        color: black;
+        font-weight: 500;
+    
+    }
+    
+    .form textarea{
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        background: transparent;
+        border: 3px solid rgba(190, 46, 221,1.0); 
+    }
+    
+    .form textarea::placeholder{
+        color: black;
+        font-weight: 500;
+    }
+    
+    .form button{
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: black;
+        color:rgba(190, 46, 221,1.0) ;
+    }
+    
+    
+
+
+
+}

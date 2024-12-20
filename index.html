@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="title">Book-Sky</h1>
+    </nav>
+
+    <div class="container">
+        <div class="book-sky">
+            <h2 class="book-title">India Good</h2>
+            <h3 class="athour">Yuvaraj</h3>
+            <p class="Description" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo nulla labore reprehenderit necessitatibus mollitia, doloremque beatae quasi? Iusto hic recusandae nulla earum sequi, tempore praesentium sint fugiat numquam quia ratione vel dolorum placeat provident </p>
+            <button onclick="Remove(event)">DELETE</button>
+
+        </div> 
+    </div>
+
+    <div class="overlay"></div>
+    <div class="form">
+        <form action="">
+            <input class="form-title" id="form-title" type="text" placeholder="Title Name">
+            <input class="form-author" id="form-author" type="text" placeholder="Author Name">
+            <textarea  id="form-Description" class="form-description" placeholder="Show Description"></textarea>
+            <button id="Add" class="ADD">ADD</button>
+            <button class="Cancel" id="Cancel">CANCEL</button>
+        </form>
+    </div>
+
+    <div class="poppupButton">+</div>
+    <script src="script.js"></script>
+</body>
+</html>
